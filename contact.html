@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto; width: 800px;
+        }
+
+        /* header */
+        .header {
+            width: 800px; height: 175px;
+        }
+        .header div.top_menu {
+            text-align: right;
+            margin: 5px 0;
+        }
+        .header div.top_menu a {
+            text-decoration: none;
+            color: black;
+        }
+        .header div.top_menu a:hover {
+            color: rgb(0, 169, 0);
+        }
+        .header div.title {
+            width: 800px;
+            height: 150px;
+        }
+
+        /* main */
+        #main {
+            height: 600px;
+        }
+        #left_nav {
+            float: left;
+            width: 200px;   height: 580px;
+            margin: 10px;
+            border-radius: 20px;
+            background: #ffffff;
+            background: linear-gradient(90deg,#ffffff 0%, #3dd33d 150%);
+            background: -webkit-linear-gradient(90deg,#ffffff 0%, #3dd33d 150%);
+            background: -moz-linear-gradient(90deg,#ffffff 0%, #3dd33d 150%);
+            box-shadow: 0px 0px 5px 3px rgba(134,134,134,0.8);
+            -webkit-box-shadow: 0px 0px 5px 3px rgba(134,134,134,0.8);
+            -moz-box-shadow: 0px 0px 5px 3px rgba(134,134,134,0.8);
+        }
+        #left_nav ul li {
+            display: inline-block;
+            list-style: none;
+            line-height: 60px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .side_list {
+            text-decoration: none;
+            display: block;
+            width: 150px;
+            color: darkgreen;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .side_list:hover {
+            color: blue;
+        }
+        #contact {
+            float: right; width: 550px;
+        }
+        .contact_title {
+            color: white;
+            text-align: center; border-radius: 20px;
+            background: rgb(6,102,72);
+            background: linear-gradient(90deg,rgb(6,102,72) 0%, #1fb44e 80%);
+            background: -webkit-linear-gradient(90deg,rgb(6,102,72) 0%, #1fb44e 80%);
+            background: -moz-linear-gradient(90deg,rgb(6,102,72) 0%, #1fb44e 80%);
+        }
+        .info1 {
+            display: inline;
+            font-size: 23px;
+            background-color:#41d5ab;
+        }
+        .info2 {
+            font-size: 20px;
+        }
+
+        /* footer */
+        .footer {
+            height: 80px;
+            line-height: 20px;
+            border-radius: 10px;
+            background: #28b025;
+            background: linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -webkit-linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -moz-linear-gradient(270deg,#28b025 0%, #238623 80%);
+        }
+        .footer div.information {
+            text-align: center;
+            font-size: 13px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="top_menu">
+            <a href="registration.html">회원가입</a> | <a href="login.html">로그인</a> | <a href="#">마이페이지</a> | <a href="#">장바구니</a>
+        </div>
+        <div class="title">
+            <a href="main page.html"><img src="imgs/logo.jpg"></a>
+            <a href="main page.html"><img src="imgs/title.jpg"></a>
+        </div>
+    </div>
+    <hr>
+
+    <!-- main -->
+    <main id="main">
+        <div id="left_nav">
+            <ul>
+                <li><h1 style="width: 120px; color: rgb(4, 42, 21);">Menu</h1></li>
+                <br>
+                <li><a class="side_list" href="about_us.html">About us</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="shop.html">SHOP</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="#">달걀 정기구독</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="#">닭장의 하루</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="contact">
+            <h1 class="contact_title">Contact</h1>
+            <p class="info1"><b><i>회사명</i></b></p>
+            <p class="info2">(주)토토네닭장</p>
+            <p class="info1"><b><i>대표전화</i></b></p>
+            <iframe style=" float:right; width:310px; height:310px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101699.17616655662!2d127.79749672642302!3d37.197871865018044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35637bedf33b8e1f%3A0xebbc8651953c192f!2z6rCV7JuQ64-EIOybkOyjvOyLnCDqt4DrnpjrqbQ!5e0!3m2!1sko!2skr!4v1681456205146!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="info2" >0000-0000</p>
+            <p class="info1"><b><i>팩스</i></b></p>
+            <p class="info2">0000-0000</p>
+            <p class="info1"><b><i>이메일</i></b></p>
+            <p class="info2">totoscoop@chicken.com</p>
+            <p class="info1"><b><i>주소</i></b></p>
+            <p class="info2">강원도 원주시 귀래면</p>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <hr>
+    <div class="footer">
+        <div class="information">
+            상점명 | (주)토토네닭장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표전화 | 7777-7777
+            <br>
+            주소 | 강원도 원주시 귀래면
+            <br>
+            사업자등록번호 | 123-45-67890&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;통신판매업 신고 | 2023-원주시-7777
+            <br>
+            대표 | 이기섭
+        </div>
+    </div>
+</body>
+</html>

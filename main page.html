@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto; width: 800px;
+        }
+
+        /* header */
+        .header {
+            width: 800px; height: 175px;
+        }
+        .header div.top_menu {
+            text-align: right;
+            margin: 5px 0;
+        }
+        .header div.top_menu a {
+            text-decoration: none;
+            color: black;
+        }
+        .header div.top_menu a:hover {
+            color: rgb(0, 169, 0);
+        }
+        .header div.title {
+            width: 800px;
+            height: 150px;
+        }
+
+        /* nav */
+        .nav {
+            height: 40px;
+            border-radius: 10px;
+            background: #28b025;
+            background: linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -webkit-linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -moz-linear-gradient(270deg,#28b025 0%, #238623 80%);
+        }
+        .nav_list {
+            list-style: none;
+            color: white;
+            float: left;
+            line-height: 40px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .nav_menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 140px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .nav_menu a:hover {
+            color: blue;
+        }
+
+        /* main */
+        .main {
+            height: 540px;
+        }
+        .main div.box1 {
+            float: left;
+            width: 255px; height: 300px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .main div.box2 {
+            display: inline-block;
+            border: 2px dotted black;
+            border-radius: 50% 50% 45% 45%;
+            width: 250px; height: 300px;
+            margin: 5px;
+            overflow: hidden;
+        }
+        .main div.box3 {
+            float: right;
+            width: 235px; height: 520px;
+            border: 1px solid black;
+            margin: 10px;
+            text-align: right;
+            overflow: hidden;
+        }
+        .main div.box4 {
+            display: inline-block;
+            width: 255px; height: 200px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .main div.box5 {
+            display: inline-block;
+            width: 230px; height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        /* footer */
+        .footer {
+            height: 80px;
+            line-height: 20px;
+            border-radius: 10px;
+            background: #28b025;
+            background: linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -webkit-linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -moz-linear-gradient(270deg,#28b025 0%, #238623 80%);
+        }
+        .footer div.information {
+            text-align: center;
+            font-size: 13px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="top_menu">
+            <a href="registration.html">회원가입</a> | <a href="login.html">로그인</a> | <a href="#">마이페이지</a> | <a href="#">장바구니</a>
+        </div>
+        <div class="title">
+            <a href="main page.html"><img src="imgs/logo.jpg"></a>
+            <a href="main page.html"><img src="imgs/title.jpg"></a>
+        </div>
+    </div>
+
+    <!-- nav -->
+    <div class="nav">
+        <ul class="nav_menu">
+            <li class="nav_list"><a href="about_us.html">About us</a></li>
+            <li class="nav_list"> | </li>
+            <li class="nav_list"><a href="shop.html">SHOP</a></li>
+            <li class="nav_list"> | </li>
+            <li class="nav_list"><a href="#">달걀 정기구독</a></li>
+            <li class="nav_list"> | </li>
+            <li class="nav_list"><a href="#">닭장의 하루</a></li>
+            <li class="nav_list"> | </li>
+            <li class="nav_list"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- main -->
+    <div class="main">
+        <a href="about_us.html"><div class="box1"><img src="imgs/About_us.jpg"></div></a>
+        <a href="shop.html"><div class="box2"><img src="imgs/shop.jpg"></div></a>
+        <a href="#"><div class="box3"><img src="imgs/eggs_subscribe.jpg"></div></a>
+        <a href="#"><div class="box4"><img src="imgs/coop_daily.jpg"></div></a>
+        <a href="contact.html"><div class="box5"><img src="imgs/contact.jpg"></div></a>
+    </div>
+
+    <!-- footer -->
+    <hr>
+    <div class="footer">
+        <div class="information">
+            상점명 | (주)토토네닭장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표전화 | 7777-7777
+            <br>
+            주소 | 강원도 원주시 귀래면
+            <br>
+            사업자등록번호 | 123-45-67890&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;통신판매업 신고 | 2023-원주시-7777
+            <br>
+            대표 | 이기섭
+        </div>
+    </div>
+</body>
+</html>

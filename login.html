@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto; width: 800px;
+        }
+
+        /* header */
+        .header {
+            width: 800px; height: 175px;
+        }
+        .header div.top_menu {
+            text-align: right;
+            margin: 5px 0;
+        }
+        .header div.top_menu a {
+            text-decoration: none;
+            color: black;
+        }
+        .header div.top_menu a:hover {
+            color: rgb(0, 169, 0);
+        }
+        .header div.title {
+            width: 800px;
+            height: 150px;
+        }
+
+        /* main */
+        #main {
+            height: 540px;
+        }
+        #left_nav {
+            float: left;
+            width: 200px;   height: 520px;
+            margin: 10px;
+            border-radius: 20px;
+            background: #ffffff;
+            background: linear-gradient(90deg,#ffffff 0%, #3dd33d 150%);
+            background: -webkit-linear-gradient(90deg,#ffffff 0%, #3dd33d 150%);
+            background: -moz-linear-gradient(90deg,#ffffff 0%, #3dd33d 150%);
+            box-shadow: 0px 0px 5px 3px rgba(134,134,134,0.8);
+            -webkit-box-shadow: 0px 0px 5px 3px rgba(134,134,134,0.8);
+            -moz-box-shadow: 0px 0px 5px 3px rgba(134,134,134,0.8);
+        }
+        #left_nav ul li {
+            display: inline-block;
+            list-style: none;
+            line-height: 60px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .side_list {
+            text-decoration: none;
+            display: block;
+            width: 150px;
+            color: darkgreen;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .side_list:hover {
+            color: blue;
+        }
+
+        .login_page {
+            float: left;
+            width: 310px; height: 200px;
+            margin: 110px 130px 90px 130px;
+        }
+        #username {
+            display: inline-block;
+            width: 180px; height: 25px;
+            margin: 10px;
+        }
+        #password {
+            display: inline-block;
+            width: 180px; height: 25px;
+            margin: 10px;
+        }
+        #login {
+            float: right;
+            width: 80px; height: 80px;
+            margin: 10px;
+        }
+        #id_save {
+            display: inline-block;
+            margin: 0 0 0 10px;
+        }
+        .find {
+            text-align: center;
+        }
+        .find a {
+            text-decoration: none;
+            color: black;
+        }
+        .find a:hover {
+            color:rgb(0, 169, 0);
+        }
+        #find_id {
+            display: inline-block;
+            
+        }
+        #find_pwd {
+            display: inline-block;
+        }
+
+        /* footer */
+        .footer {
+            height: 80px;
+            line-height: 20px;
+            border-radius: 10px;
+            background: #28b025;
+            background: linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -webkit-linear-gradient(270deg,#28b025 0%, #238623 80%);
+            background: -moz-linear-gradient(270deg,#28b025 0%, #238623 80%);
+        }
+        .footer div.information {
+            text-align: center;
+            font-size: 13px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="top_menu">
+            <a href="registration.html">회원가입</a> | <a href="login.html">로그인</a> | <a href="#">마이페이지</a> | <a href="#">장바구니</a>
+        </div>
+        <div class="title">
+            <a href="main page.html"><img src="imgs/logo.jpg"></a>
+            <a href="main page.html"><img src="imgs/title.jpg"></a>
+        </div>
+    </div>
+    <hr>
+
+    <!-- main -->
+    <main id="main">
+        <div id="left_nav">
+            <ul>
+                <li><h1 style="width: 120px; color: rgb(4, 42, 21);">Menu</h1></li>
+                <br>
+                <li><a class="side_list" href="about_us.html">About us</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="shop.html">SHOP</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="#">달걀 정기구독</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="#">닭장의 하루</a></li>
+                <br>
+                <hr>
+                <li><a class="side_list" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="login_page">
+            <hr>
+            <h2 style="text-align: center;">MEMBER LOGIN</h2>
+            <form>
+                <div><input type="submit" id="login" value="Login"></div>
+                <div><input type="text" id="username" name="username" required placeholder="ID"></div>
+                <div><input type="password" id="password" name="password" required placeholder="PASSWORD"></div>
+                <div><input type="checkbox" id="id_save"><label for="id_save"> 아이디 저장</label></div>
+                <br>
+                <div class="find">
+                    <div id="find_id"><a href="#">아이디 찾기</a></div>
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <div id="find_pwd"><a href="#">비밀번호 찾기</a></div>
+                </div>
+            </form>
+            <br>
+            <hr>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <hr>
+    <div class="footer">
+        <div class="information">
+            상점명 | (주)토토네닭장&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표전화 | 7777-7777
+            <br>
+            주소 | 강원도 원주시 귀래면
+            <br>
+            사업자등록번호 | 123-45-67890&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;통신판매업 신고 | 2023-원주시-7777
+            <br>
+            대표 | 이기섭
+        </div>
+    </div>
+</body>
+</html>
